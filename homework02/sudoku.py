@@ -217,7 +217,7 @@ def generate_sudoku(count_elem: int) -> tp.List[tp.List[str]]:
     True
     """
     count_pos = 81
-    empty_grid = group(["." for _ in range(count_pos)], int(count_pos ** 0.5))
+    empty_grid = group(["." for _ in range(count_pos)], int(count_pos**0.5))
     total_grid = solve(empty_grid)
 
     if not total_grid:
